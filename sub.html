@@ -12,21 +12,20 @@
                 background-color: black;
                 text-align: center;
                 margin-top: 50px;
-                margin-bottom: 100px;
             }
             table{
                 width: 100%; margin: 0 auto;
                 margin-bottom: 50px;
                 color: wheat;
             }
-            div{
+            .box{
                 width: 100%;
                 background-image: url(img/5SOS-BudStage-2022-2.jpg);
                 background-size: cover;
                 height: 80%;
                 
             }
-            div::before{
+            .box::before{
                 content: "";
                 opacity: 0.5;
                 position: absolute;
@@ -38,7 +37,7 @@
                 background-color: #000;
             }
 
-            div a{
+           .box a{
                 color: #fff;
                 text-align: center;
                 line-height: 50px;  
@@ -50,6 +49,13 @@
                 font-size: 20px;
                 font-family: 'Montserrat', sans-serif;
 
+            }
+            ul{
+                list-style: none;
+            }
+            ul li{
+                float: left;
+                margin-right: 20px;
             }
             
         </style>
@@ -66,7 +72,7 @@
             </tr>
         </table>   
 
-        <div style="text-align: center;">
+        <div class="box" style="text-align: center;">
             <br/>
             <br>
             <a>
@@ -87,5 +93,11 @@
         <p style="color: white; font-size: 150px; font-family: 'Skranji', cursive;">
             5 second of summer
         </p>
+        <div>
+        <ul>
+            <li><img src="img/channels4_profile.jpg" alt=""></li>
+            <li><img src="img/channels4_profile.jpg" alt=""></li>
+        </ul>
+        </div>
     </body>
 </html>
