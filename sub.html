@@ -5,29 +5,84 @@
         <meta charset="utf-8" /> <!-- utf-8, euc-kr -->
     </head>
 
-    <body style="background-color: beige; margin-top: 50px;"> <!--본문-->
+    <body> <!--본문-->
+        <style>
+            body{
+                background-color: black;
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 100px;
+            }
+            table{
+                width: 100%; margin: 0 auto;
+                margin-bottom: 50px;
+                color: wheat;
+            }
+            div{
+                width: 100%;
+                background-image: url(img/5SOS-BudStage-2022-2.jpg);
+                background-size: cover;
+                height: 80%;
+                
+            }
+            div::before{
+                content: "";
+                opacity: 0.5;
+                position: absolute;
+                top: 200px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                height: 100%;
+                background-color: #000;
+            }
+
+            div a{
+                color: #fff;
+                text-align: center;
+                line-height: 50px;  
+                position: relative;
+                font-size: 20px;
+                
+            }
+            table th{
+                font-size: 20px;
+            }
+            
+        </style>
+
+        <p style="color: whitesmoke;">
+            <strong style="font-size: 50px;">5SOS IN KOREA</strong>
+        </p>
+
+        <table>
+            <tr>
+                <th>
+                    5sos
+                </th>
+            </tr>
+        </table>   
+
         <div style="text-align: center;">
-            <a class="1" href="" style="color: blue;">
-                <strong style="font-size: 30px;">오소스의 내한 하는법~</strong></a>
-            <br>
+            <br/>
             <br>
             <a>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/SJYO0p8CpQc?si=jzC5yaaAxW6EVo1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <br>
-                <strong>첫번째! 아시아에 투어를 오기!</strong>
+                <strong>ASIA TOUR</strong>
             </a>
             <br>
             <br>
             <a>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/KHGZZz_w4aU?si=3112GH6GEvlj4ZfR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <br>
-                <strong>두번째! 예능으로 오지 않기!</strong>
+                <strong>NO TV PROGRAM</strong>
             </a>
             <br>
             <br>           
-            <a>
-                <strong>끝~~</strong>
-            </a>
         </div>
+        <p style="color: white; font-size: 200px;">
+            5 second of summer
+        </p>
     </body>
 </html>
