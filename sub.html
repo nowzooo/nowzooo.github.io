@@ -3,101 +3,61 @@
     <head> <!--머릿말-->
         <title>한현주의 자유 홈페이지</title>
         <meta charset="utf-8" /> <!-- utf-8, euc-kr -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
     </head>
 
     <body> <!--본문-->
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:wght@900&family=Skranji:wght@700&display=swap');
-            body{
-                background-color: black;
-                text-align: center;
-                margin-top: 50px;
-            }
-            table{
-                width: 100%; margin: 0 auto;
-                margin-bottom: 50px;
-                color: wheat;
-            }
-            .box{
-                width: 100%;
-                background-image: url(img/5SOS-BudStage-2022-2.jpg);
-                background-size: cover;
-                height: 80%;
-                
-            }
-            .box::before{
-                content: "";
-                opacity: 0.5;
-                position: absolute;
-                top: 200px;
-                left: 0px;
-                right: 0px;
-                bottom: 0px;
-                height: 100%;
-                background-color: #000;
-            }
+        <header id="header">
+            <div class="container">
+                <div class="h_top">
+                    <h1 class="logo">
+                        5sos
+                    </h1>
+                </div> <!-- .h_top -->
+            </div> <!-- .container -->
+            <div class="container clearfix">
+                <nav id="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">5sos</a>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">live</a>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">music</a>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">video</a>
+                            <div class="line"></div>
+                        </li> 
+                    </ul> <!--gnb-->
+                </nav> <!--nav-->
+              </div> <!--container-->
+        </header>
 
-           .box a{
-                color: #fff;
-                text-align: center;
-                line-height: 50px;  
-                position: relative;
-                font-size: 20px;
-                
-            }
-            table th{
-                font-size: 20px;
-                font-family: 'Montserrat', sans-serif;
-
-            }
-            ul{
-                list-style: none;
-            }
-            ul li{
-                float: left;
-                margin-right: 20px;
-            }
-            
-        </style>
-
-        <p style="color: whitesmoke;">
-            <strong style="font-size: 50px; font-family: 'Skranji', cursive;">*5SOS IN KOREA*</strong>
-        </p>
-
-        <table>
-            <tr>
-                <th>
-                    5sos
-                </th>
-            </tr>
-        </table>   
-
-        <div class="box" style="text-align: center;">
-            <br/>
-            <br>
-            <a>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SJYO0p8CpQc?si=jzC5yaaAxW6EVo1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <br>
-                <strong style=" font-family: 'Montserrat', sans-serif;">ASIA TOUR</strong>
-            </a>
-            <br>
-            <br>
-            <a>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KHGZZz_w4aU?si=3112GH6GEvlj4ZfR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <br>
-                <strong style=" font-family: 'Montserrat', sans-serif;">NO TV PROGRAM</strong>
-            </a>
-            <br>
-            <br>           
-        </div>
-        <p style="color: white; font-size: 150px; font-family: 'Skranji', cursive;">
-            5 second of summer
-        </p>
-        <div>
-        <ul>
-            <li><img src="img/channels4_profile.jpg" alt=""></li>
-            <li><img src="img/channels4_profile.jpg" alt=""></li>
-        </ul>
-        </div>
+        <main>
+            <div class="swiper">
+                <ul class="swiper-wrapper">
+                    <li>
+                        <a href="#">
+                            <h1>
+                                5 second of summer
+                            </h1>
+                            <img src="img/channels4_profile.jpg" alt="">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Officiis sint rem error a magnam sit veniam quasi dolor accusamus ratione <br> quod voluptates asperiores cum eius earum facilis quidem, doloremque praesentium?</p>
+                        </a>
+                    </li>
+                    
+                    <!-- <li>
+                        <a href="#"><img src="img/5SOS-BudStage-2022-2.jpg" alt=""></a>     
+                    </li> -->
+                </ul>
+            </div>
+        </main>
     </body>
 </html>

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+.clearfix::after{content: ''; display: block; clear: both;}
+.container{position: relative; width: 1700px; margin: 0 auto;}
+
+body{
+    background: #111111;
+}
+
+/*header*/
+#header{position: fixed; left: 0; top: 0; z-index: 100; width: 100%; background: #111;
+    padding-bottom: 20px;}
+
+
+/* logo */
+
+#header .container .logo{
+    position: absolute; 
+    left: 0; top: 40px; 
+    font-size: 30px; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: orangered;
+}
+
+/*h_top*/
+#header .container .h_top{
+    margin: 0 auto;
+}    
+
+#header .container #nav{width: 100%; padding-top: 40px; }
+#header .container #nav .gnb{width: 100%; text-align: right; } 
+#header .container #nav .gnb>li{ 
+        position: relative; display: inline-block; margin-right: 130px; text-align: center;
+}
+#header .container #nav .gnb>li>a{ 
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        border-bottom: 2px solid none;
+}
+    
+#nav .gnb li .line::after {margin-top: 2px; transition: 0.4s; content: ''; display: block; width: 15px; height: 2px; background: #111;}
+#nav .gnb li:hover .line::after {width: 100%; background: orangered;}    
+
+/*swiper*/
+.swiper{
+    margin-top: 300px;
+    text-align: center;
+    font-weight: bolder;
+}
+.swiper .swiper-wrapper li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    color: orangered;
+    font-style: italic;
+}
+.swiper .swiper-wrapper li a img{
+    margin-top: 20px;
+    height: 300px;
+}
+.swiper .swiper-wrapper li a p{
+    margin-top: 20px;
+    font-size: 15px;
+}
