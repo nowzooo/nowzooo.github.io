@@ -41,7 +41,7 @@
         </header>
 
         <main>
-            <div class="visual">
+            <section class="visual">
                 <ul class="visual-wrapper">
                     <li>
                         <a href="#">
@@ -49,42 +49,137 @@
                                 5 second of summer
                             </h1>
                             <img src="img/channels4_profile.jpg" alt="">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Officiis sint rem error a magnam sit veniam quasi dolor accusamus ratione <br> quod voluptates asperiores cum eius earum facilis quidem, doloremque praesentium?</p>
+                            <div class="visual_text">
+                                <p>5 SUMMER OF SUMMER</p>
+                                <p>The Feeling of Falling Upwards – Live From The Royal Albert Hall, Out Everywhere</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="con1">
+            <div class="con1 container">
                 <div class="con1_text">
                     <h1>
                         5sos music
                     </h1>
                 </div>
                 <p>
-                   5 SUMMER OF SUMMER
+                   5 SECOND OF SUMMER
                 </p>
                 <video controls autoplay muted>
                     <source src="mp4/5 Seconds of Summer - COMPLETE MESS (Official Music Video).mp4" type="video/mp4"/>
                 </video>
             </div>
 
-            <div class="con2">
-                <ul>
+            <section class="tour_item container">
+                <div class="tour_txt">
+                    <h1>TOUR ARRIVAL</h1>
+                </div><!-- .tour_txt -->
+                <ul class="tour_item">
                     <li>
-                        <a href="">
-                            <img src="img/5SOS-BudStage-2022-2.jpg" alt="">
-                            <h2>LIVE IN BUDSTAGE</h2>
+                        <a href="#">
+                        <div class="img_box">  
+                            <img src="img/5SOS_TourECRUHoodie_fb.webp" alt="">
+                        </div>
+                        <strong>5SOS TOUR HOODIE</strong>
+                        <p>HOODIE</p>
+                        <span>27,000</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <img src="img/5-Seconds-Of-Summer-Royal-Albert-Hall-London-www.patrickgunning.com-7735.webp" alt="">
-                            <h2>LIVE IN ROYAL AIBERT HALL</h2>
+                        <a href="#">
+                            <div class="img_box">  
+                                <img src="img/5SOS_CreamLS_fb.webp" alt="">
+                            </div>
+                            <strong>5SOS LONGSLEEVE</strong>
+                            <p>LONGSLEEVE</p>
+                            <span>$55.00</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img_box">  
+                                <img src="img/5SOS_FadedBlack_tee.webp" alt="">
+                            </div>
+                            <strong>I GOT SAUCED BLACK TEE</strong>
+                            <p>TEE</p>
+                            <span>$45.00</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img_box">  
+                                <img src="img/5SOS_bucket_hat.webp" alt="">
+                            </div>
+                            <strong>CHECKERED BUCKET HAT</strong>
+                            <p>BUCKET HAT</p>
+                            <span>$35.00</span>
                         </a>
                     </li>
                 </ul>
-            </div>
+                <button class="n_btn">MORE</button>
+            </section>
+
+            <section class="live container">
+                <div class="live_txt">
+                    <h1>LIVE</h1>
+                </div>
+                <table class="live_list">
+                    <tr>
+                        <th> Sat, OCT 21 </th>
+                        <th> Sun, OCT 22 </th>
+                    </tr>
+                    <tr>
+                        <td> When We Were Young 2023</td>
+                        <td> When We Were Young 2023</td>
+                    </tr>
+                    <tr>
+                        <td> Las Vegas, NV </td>
+                        <td> Las Vegas, NV </td>
+                    </tr>
+                    <tr>
+                        <td class="btn_w"><button class="live_btn">ticket</button></td>
+                        <td class="btn_w"><button class="live_btn">ticket</button></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="email container">
+                <div class="email_txt">
+                    <h1>FIRST ACCESS TO <br/> NEW TOUR DATES</h1>
+                </div>
+                <label for="email">
+                    <input
+                           type="email" 
+                           id="email"
+                           pattern=".+@gmail\.com"
+                           placeholder="example@gmail.com"
+                           required>
+                           <button class="email_btn" onclick="alert('이메일을 입력해주세요.');" >JOIN</button>
+                  </label>
+            </section>
         </main>
+
+        <footer>
+            <div class="f_logo">
+                <h1>
+                    5sos
+                </h1>
+            </div>
+            <div class="f_sns_w  clearfix">
+                <ul class="f_sns">
+                    <li>
+                        <img src="img/instagram.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/twitter.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/facebook.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
