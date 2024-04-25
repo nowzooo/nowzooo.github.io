@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container{position: relative; width: 1800px; margin: 0 auto;}
+.clearfix::after{content: ''; display: block; clear: both;}
+
+body{
+    background-color: #111;
+    color: #fff;
+}
+
+.header{
+    position: fixed; 
+    left: 0; top: 0;
+    z-index: 1000000000; 
+    width: 100%; 
+    height: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: #111;
+}
+.logo{
+    position: absolute;
+    top: 20px; left: 50px;
+}
+.logo img{
+    width: 45px;
+    color: #BC8FDD;
+}
+.header nav{
+    padding-top: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    padding-left: 80px;
+}
+
+
+.header nav ul{
+    text-align: center;
+
+
+}
+.header nav li{
+    display: inline-block;
+    margin-right: 50px;
+    
+}
+.header nav li a{
+    color: #BC8FDD;
+    text-decoration-line: none;
+    display: block;
+}
+.header nav li a:hover{
+    transform: scaleY(-1);
+    transition: .2s;
+}
+.main{
+    margin-top: 300px;
+}
+.visual .visualtxt{
+    font-size: 400px;
+    text-align: center;
+    position: relative;
+    font-family: "Fugaz One", sans-serif;
+    z-index: 100;
+}
+.visual .visualtxt .visualimg ul li{
+    position: absolute;
+    z-index: -1;
+}
+.visual .visualtxt .visualimg ul li:first-child{
+    left: 35%;
+    top: -60%;
+    z-index: 1;
+}
+.visual .visualtxt .visualimg ul li:nth-child(2){
+    left: 0;
+    top: 10%;
+    
+}
+.visual .visualtxt .visualimg ul li:nth-child(3){
+    right: 0;
+    top: -10%;
+    
+}
+.visual .visualtxt .visualimg ul li:last-child{
+    right: 20%;
+    top: 40%;
+    z-index: 1;
+}
+.visual .visualtxt .visualimg img{
+    width: 150px;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.garllery-main{
+    margin-top: 150px;
+    text-align: center;
+}
+.garllery-ttext p{
+    font-size: 20px;
+    line-height: 35px;
+}
+.garllery-ttext p span{
+    font-weight: 600;
+    color: #BC8FDD;
+}
+
+.garllery-line-img{
+    margin-top: 100px;
+    
+}
+.garllery-line-img ul{
+    display: flex;
+    justify-content: space-around;
+}
+.garllery-line-img ul li{
+    width: 300px;
+    overflow: hidden;
+}
+.garllery-line-img img{
+    width: 300px;
+    transition: all 0.2s linear;
+}
+.garllery-line-img img:hover{
+    transform: scale(1.4);
+}
+.garllery-line-img ul li:nth-child(1) img{
+    width: 350px;
+}
+.garllery-line-img ul li:nth-child(2) img{
+    width: 250px;
+}
+.garllery-line-img ul li:nth-child(3) img{
+    width: 350px;
+}
+.garllery-line-img ul li:nth-child(4) img{
+    width: 350px;
+}
+
+.garllery-inner{
+    overflow: hidden;
+    margin-top: 250px;
+    background-image: url(../img/gallery1.jpg);
+    height: 310vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.garllery-out h2{
+    margin-top: 100px;
+    font-size: 50px;
+    color: #BC8FDD;
+    font-family: "Fugaz One", sans-serif;
+
+}
+.garllery-out ul{
+    margin-top: 100px;
+    
+}
+.garllery-out ul li{
+    margin-bottom: 130px;
+}
+.garllery-out ul li:nth-child(2){
+    text-align: left;
+    margin-left: 20px;
+    width: 600px;
+}
+.garllery-out ul li:nth-child(3){
+    text-align: right;
+    margin-right: 20px;
+}
+.garllery-out img{
+    width: 700px;
+}
+
+.footer{
+    margin-top: 250px;
+}
+.footer .sns a{
+    border: 1px solid #BC8FDD;
+    border-radius: 1000px;
+    padding: 10px 40px 10px 40px;
+    color: #BC8FDD;
+    text-decoration-line: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+.footer .sns a:last-child{
+    padding: 10px 75px 10px 75px;
+}
+.footer .sns a:hover{
+    background-color: #BC8FDD;
+    color: #111;
+}
+.footer .member {
+    margin-top: 100px;
+    text-align: right;
+}
+.footer .member h2{
+    font-family: "Fugaz One", sans-serif;
+    font-size: 50px;
+}
+.footer .member p{
+    font-family: "Roboto", sans-serif;
+    margin-right: 540px;
+    margin-top: 50px;
+}
+.footer .member hr{
+    width: 650px;
+    float: right;
+    margin-top: 30px;
+}
+.footer .member .membername{
+    margin-top: 50px;
+}
+.footer .member .membername li{
+    display: inline-block;
+    margin-left: 42px;
+    font-family: "Roboto", sans-serif;
+}
+.footer .member .membername li:hover{
+    color: #BC8FDD;
+}
+.footer .footerv{
+    position: relative;
+    margin-top: 200px;
+}
+.footer .footerv h1{
+    font-family: "Fugaz One", sans-serif;
+    font-size: 550px;
+    text-align: center;
+    
+
+}
+.footer .footerv hr{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: #111;
+    border: none;
+    top: 45%;    
+    transform: translateY(-50%);
+}
