@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maneskin</title>
+    <link rel="stylesheet" href="css/maneskin.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="./index.html">
+                <h1 class="logo">
+                    <img src="img/MO NE.png" alt="">
+                </h1>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./newalbum.html">
+                            <p>NEW ALBUM</p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="./tour.html">
+                            <p>TOUR</p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="./maneskin.html">
+                            <p>MANESKIN</p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="./gallery.html">
+                            <p>GALLERY</p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="./playlist.html">
+                            <p>PLAYLIST</p>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="visual">
+                <div class="visualtxt">
+                    <h1>MANE</h1>
+                    <hr>
+                </div>
+                <div class="visual_undertxt">
+                    <p>WE ARE MANESKIN!</p>
+                    <p>~WELCOME OUR WORD~</p>
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="aboutimg">
+                    <img src="img/maneskin.png" alt="">
+                </div>
+                <div class="abouttxt">
+                    <h2>MANESKIN?</h2>
+                    <p>There is no band in recent years that suits the title of a band <br>
+                        with stylish music that breaks down gender distinctions as well as <span>maneskin.</span>  <br>
+                        <br>
+                        It is only a matter of time before the hearts and eyes are <br>
+                        lost to those who beat and scream as if they were rebelling against all norms. <br>
+                        The average age group born in 1999 to 2001 is low, but their charismatic performance is veteran. <br>
+                        <br>
+                        The band, which was formed in Rome in 2015, <br>
+                        has grown to the point where it won the <span>Eurovision Song Test in 2021</span>  <br>
+                        and was nominated for <span>the Grammy Awards Rookie of the Year in 2023,</span>  <br>
+                        and the energy of transferring the venue to a completely different level based <br>
+                        on energy and intense rock makes them pay attention at once. </p>
+                </div>
+            </div>
+
+            <div class="moneskin">
+                <img src="img/maneskin2.jpg" alt="">
+                <p>MANESKIN ON TODAY!</p>
+            </div>
+
+            <div class="member">
+                <h2>INTRODUCE...</h2>
+                <div class="rolling-list">
+                    <ul>
+                        <li>
+                            <img src="img/member1.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="img/member2.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="img/member3.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="img/member4.webp" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="sns">
+                <a href="https://www.instagram.com/maneskinofficial/">INSTAGRAM</a>
+                <a href="https://twitter.com/thisismaneskin">X</a>
+            </div>
+            <div class="member2 clearfix">
+                <h2>WELCOME the maneskin!</h2>
+                <p>member</p>
+                <hr>
+                    <ul class="membername">
+                        <li>Damiano David</li>
+                        <li>Victoria De Angelis</li>
+                        <li>Ethan Torchio</li>
+                        <li>Thomas Raggi</li>
+                    </ul>
+            </div>
+            <div class="footerv">
+                <h1>SKIN</h1>
+                <hr>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script>
+        let roller = document.querySelector('.rolling-list');
+        roller.id = 'roller1'; 
+
+        let clone = roller.cloneNode(true)
+
+        clone.id = 'roller2';
+        document.querySelector('.member').appendChild(clone); 
+
+        document.querySelector('#roller1').style.left = '0px';
+        document.querySelector('#roller2').style.left = document.querySelector('.rolling-list ul').offsetWidth + 'px';
+        
+
+        roller.classList.add('original');
+        clone.classList.add('clone');
+    </script>
+</body>
+</html>
